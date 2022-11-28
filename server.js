@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.get('/', (req, res) => {
     Wish.fetchAllWishes(wishesFromFile => {
         console.log(wishesFromFile);
-        res.render("index", {myWhishes: wishesFromFile});
+        res.render("index", {myWishes: wishesFromFile});
     });
 });
 
