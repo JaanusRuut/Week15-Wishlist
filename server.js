@@ -27,5 +27,5 @@ app.post("/wish", (req, res) => {
 const port = 5000;
 
 app.listen(port, () => {
-    console.log('Server is running ${Port}.');
+    console.log(`Server is running ${Port}.`);
 });
