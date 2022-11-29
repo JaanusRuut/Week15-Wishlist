@@ -26,7 +26,7 @@ app.post("/wish", (req, res) => {
 
 const port = 5000;
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("Server has started.");
+app.listen(port, () => {
+    console.log(`Server is running ${port}.`);
 });
 
